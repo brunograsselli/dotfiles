@@ -8,6 +8,7 @@ export CLICOLOR="auto"
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 export GIT_EDITOR="vim"
 export PATH=/usr/local/sbin:/Users/$USER/bin:$GOPATH/bin:$PATH
+export NVM_DIR="$HOME/.nvm"
 
 alias bi="bundle install"
 alias be="bundle exec"
@@ -23,8 +24,6 @@ set -o vi
 
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
-
-export NVM_DIR="$HOME/.nvm"
 
 setopt prompt_subst
 
