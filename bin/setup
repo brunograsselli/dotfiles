@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e -u
+
+rm ~/.gitconfig ~/.gitignore ~/.tmux.conf ~/.zshrc
+
+ln -s $PROJECTS/dotfiles/.gitconfig ~/.gitconfig
+ln -s $PROJECTS/dotfiles/.gitignore ~/.gitignore
+ln -s $PROJECTS/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s $PROJECTS/dotfiles/.zshrc ~/.zshrc
+
+touch ~/.gitconfig-secrets
+touch ~/.shell-secrets
