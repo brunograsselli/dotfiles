@@ -1,5 +1,6 @@
 source ~/.shell-secrets
 
+export LC_ALL=en_US.UTF-8
 export GOPATH="$HOME/go"
 export BUNDLER_EDITOR="vim"
 export GREP_OPTIONS="--color=auto"
@@ -19,6 +20,8 @@ alias dc="docker-compose"
 alias tl="go test -v | less"
 alias ll="ls -ls"
 alias tmux='direnv exec / tmux'
+alias acknt='ack --ignore-file=match:/_test.go$/'
+alias t='tee /dev/tty | grep "\-\-\- FAIL" > /tmp/failures && echo "\nSummary\n" && cat /tmp/failures; (exit ${pipestatus[1]})'
 
 set -o vi
 
