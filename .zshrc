@@ -11,13 +11,8 @@ export GIT_EDITOR="vim"
 export PATH=/usr/local/sbin:/Users/$USER/bin:$GOPATH/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 
-alias bi="bundle install"
-alias be="bundle exec"
 alias ls="ls -G"
 alias tree="tree -C"
-alias pg='postgres -D /usr/local/var/postgres'
-alias dc="docker-compose"
-alias tl="go test -v | less"
 alias ll="ls -ls"
 alias tmux='direnv exec / tmux'
 alias acknt='ack --ignore-file=match:/_test.go$/'
