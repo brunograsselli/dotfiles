@@ -6,12 +6,11 @@ export BUNDLER_EDITOR="vim"
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="4;33"
 export CLICOLOR="auto"
-export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 export GIT_EDITOR="vim"
-export PATH=/usr/local/sbin:/Users/$USER/bin:$GOPATH/bin:$PATH
+export PATH=$HOME/bin:$GOPATH/bin:$HOME/go_install/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 
-alias ls="ls -G"
+alias ls="ls --color=auto"
 alias tree="tree -C"
 alias ll="ls -ls"
 alias tmux='direnv exec / tmux'
@@ -64,3 +63,5 @@ setopt share_history # share command history data
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 bindkey '^E' fzf-history-widget
+
+eval `dircolors /home/bgrasselli/.dir_colors/dircolors`
