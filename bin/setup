@@ -2,12 +2,13 @@
 
 set -e -u
 
-rm ~/.gitconfig ~/.gitignore ~/.tmux.conf ~/.zshrc
+rm ~/.gitconfig ~/.gitignore ~/.tmux.conf ~/.zshrc ~/.fzf.zsh
 
 ln -s $PROJECTS/dotfiles/.gitconfig ~/.gitconfig
 ln -s $PROJECTS/dotfiles/.gitignore ~/.gitignore
 ln -s $PROJECTS/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s $PROJECTS/dotfiles/.zshrc ~/.zshrc
+ln -s $PROJECTS/dotfiles/.fzf.zsh ~/.fzf.zsh
 
 touch ~/.gitconfig-secrets
 touch ~/.shell-secrets
