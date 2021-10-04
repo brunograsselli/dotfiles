@@ -3,7 +3,7 @@
 ## Setup
 ```bash
 # WARNING: this command deletes existing configuration
-PROJECTS="/Users/$(whoami)/projects" ./bin/setup
+PROJECTS="$HOME/projects" ./bin/setup
 ```
 
 ## Changing default shell
