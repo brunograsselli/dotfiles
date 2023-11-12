@@ -2,7 +2,7 @@
 
 set -e -u
 
-rm ~/.gitconfig ~/.gitignore ~/.tmux.conf ~/.zshrc ~/.fzf.zsh
+#rm ~/.gitconfig ~/.gitignore ~/.tmux.conf ~/.zshrc ~/.fzf.zsh
 
 ln -s $PROJECTS/dotfiles/.gitconfig ~/.gitconfig
 ln -s $PROJECTS/dotfiles/.gitignore ~/.gitignore

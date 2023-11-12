@@ -13,14 +13,14 @@ export NVM_DIR="$HOME/.nvm"
 alias ls="ls --color=auto"
 alias tree="tree -C"
 alias ll="ls -ls"
-alias tmux='direnv exec / tmux'
+#alias tmux='direnv exec / tmux'
 alias acknt='ack --ignore-file=match:/_test.go$/'
 alias t='tee /dev/tty | grep "\-\-\- FAIL" > /tmp/failures && echo "\nSummary\n" && cat /tmp/failures; (exit ${pipestatus[1]})'
 
 set -o vi
 
-eval "$(rbenv init -)"
-eval "$(direnv hook zsh)"
+#eval "$(rbenv init -)"
+#eval "$(direnv hook zsh)"
 
 setopt prompt_subst
 
@@ -58,10 +58,10 @@ setopt inc_append_history
 setopt share_history # share command history data
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
-bindkey '^E' fzf-history-widget
+#bindkey '^E' fzf-history-widget
 
-eval `dircolors /home/bgrasselli/.dir_colors/dircolors`
+#eval `dircolors /home/bgrasselli/.dir_colors/dircolors`
