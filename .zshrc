@@ -1,5 +1,8 @@
 source ~/.shell-secrets
 
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
+
 export LC_ALL=en_US.UTF-8
 export GOPATH="$HOME/go"
 export BUNDLER_EDITOR="vim"
@@ -8,6 +11,7 @@ export GREP_COLOR="4;33"
 export CLICOLOR="auto"
 export GIT_EDITOR="vim"
 export PATH=$HOME/bin:$GOPATH/bin:$HOME/go_install/bin:$PATH
+export PATH="$PATH:$(go env GOPATH)/bin"
 export NVM_DIR="$HOME/.nvm"
 
 alias ls="ls --color=auto"
@@ -65,3 +69,6 @@ bindkey '^R' history-incremental-search-backward
 #bindkey '^E' fzf-history-widget
 
 #eval `dircolors /home/bgrasselli/.dir_colors/dircolors`
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
