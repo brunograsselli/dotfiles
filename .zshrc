@@ -13,6 +13,7 @@ export GIT_EDITOR="vim"
 export PATH=$HOME/bin:$GOPATH/bin:$HOME/go_install/bin:$PATH
 export PATH="$PATH:$(go env GOPATH)/bin"
 export NVM_DIR="$HOME/.nvm"
+export GOPRIVATE="github.com/brunograsselli/*"
 
 alias ls="ls --color=auto"
 alias tree="tree -C"
