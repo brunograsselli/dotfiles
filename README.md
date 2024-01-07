@@ -10,3 +10,8 @@ PROJECTS="$HOME/projects" ./bin/setup
 ```bash
 chsh -s /bin/zsh
 ```
+
+## Repeat keys
+```
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
