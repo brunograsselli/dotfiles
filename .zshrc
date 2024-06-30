@@ -55,4 +55,3 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
